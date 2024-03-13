@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+h1 {
+    color: white;
+}
+
+#btnSearch {
+    max-height: 50px;
+    min-height: 50px;
+    background: black;
+    color: black;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 0px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#ipAddress {
+    max-height: 50px;
+    min-height: 50px;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+span {
+    font-size: 8px;
+}
+
+hr {
+
+    border: none;
+    border-left: 1px solid hsla(200, 10%, 50%, 100);
+    height: auto;
+    width: 1px;
+}
+
+.formIP {
+    display: flex;
+    justify-content: center;
+}
+
+.titleForm {
+    display: grid;
+    justify-content: center;
+}
+
+.resultPanel {
+    top: 30px;
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    padding: 5px;
+    background: white;
+    z-index: 100000;
+    position: relative;
+}
+
+.viewData {
+    font-weight: 900;
+}
+
+.data {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('../images/pattern-bg-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 40px;
+    padding-top: 30px;
+}
+
+.bodyPage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    background: black;
+    font-family: "Rubik", sans-serif;
+}
+
+.mapGeneral {
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@media(max-width: 720px) {
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: url('../images/pattern-bg-mobile.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 40px;
+    }
+    hr{
+        
+    border: 1px solid hsla(200, 10%, 50%, 100);
+    }
+    .resultPanel {
+        position: relative;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 15px;
+        padding: 5px;
+        background: white;
+    }
+}
